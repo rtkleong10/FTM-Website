@@ -1,0 +1,304 @@
+/* Core Styles*/
+body {
+	margin: 0;
+	font-family: Century Gothic;
+	background: #000;
+}
+
+nav {
+	margin: 0;
+}
+
+main {
+	padding: 2em 0em;
+	background: #eee;
+}
+
+footer {
+	background: #000;
+	color: #fff;
+	padding: 1em;
+	font-size: 12px;
+}
+
+h1 {
+	font-size: 50px;
+	color: #fff;
+}
+
+h1, h2, h3, h4, p {
+	margin: 0;
+	line-height: 1.5;
+}
+
+.content-wrap {
+	padding: 1em;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* Navigation Bar */
+.navbar ul {
+	margin: 0;
+	background: #fff;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-left: 10em;
+	list-style: none;
+	font-size: 16px;
+	border-bottom: #aaa solid 1px;
+	line-height: 2;
+}
+
+.navbar div {
+	position: absolute;
+	height: 6em;
+}
+
+.navbar img {
+	height: 100%;
+}
+
+.navbar li {
+	padding-right: 1em;
+	display: inline;
+}
+
+.navbar-item {
+	text-decoration: none;
+	color: #000;
+}
+
+.navbar-item:hover {
+	color: #aaa;
+}
+
+.navbar-item.active {
+	color: #0099ff;
+}
+
+
+.navbar-brand-img {
+	
+}
+
+/* Features */
+#home-feature {
+	min-height: 400px;
+	background: #14CCB7;
+	width: 100%;
+	color: #fff;
+	padding: 5.25em 0;
+	text-align: center;
+}
+
+#home-feature p {
+	font-size: 20px;
+}
+
+.feature {
+	background: #00C8FF;
+	width: 100%;
+	padding: 3em 0;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* Box & Card Formatting*/
+.mission-vision-box {
+	padding: 2em;
+	color: #fff;
+}
+
+.mission-vision-box:first-child {
+	background: #0077B3;
+}
+
+.mission-vision-box:last-child {
+	background: #333;
+}
+
+.team-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.team-box {
+	text-align: center;
+	background: #fff;
+	margin: 0.5em;
+	border-radius: 0.5em;
+	padding: 1em;
+}
+
+.team-box img {
+	width: 75%;
+}
+
+.our-workflow-card {
+	background: #fff;
+	margin: 1em;
+	border-radius: 0.5em;
+	padding: 1em;
+}
+
+.our-projects-card {
+	background: #fff;
+	margin: 1em;
+	border-radius: 0.5em;
+	padding: 1em;
+}
+
+.our-projects-card h3 a {
+	text-decoration: none;
+	color: #000;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* Button Formatting */
+a.button {
+	display: inline-block;
+	margin-top: 0.5em;
+	text-decoration: none;
+	color: #fff;
+	background: #0099ff;
+	border-radius: 0.5em;
+	padding: 0.5em;
+	border: 0;
+}
+
+a:hover.button {
+	background: #0077dd;
+	color: #ddd;
+}
+
+a.button.disabled {
+	background: #ccc;
+}
+
+a:hover.button.disabled {
+	color: #fff;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* Form */
+input, textarea {
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	border: #ccc 1px solid;
+	margin-top: 1em;
+	font-size: 18px;
+	padding: 0.5em;
+}
+
+.submit-button {
+	display: inline-block;
+	margin-top: 0.5em;
+	text-decoration: none;
+	color: #fff;
+	background: #0099ff;
+	border-radius: 0.5em;
+	padding: 0.5em;
+	width: auto;
+	border: 0;
+}
+
+textarea {
+	height: 10em;
+	resize: none;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* Images */
+#sst-ibook-image {
+	background: #fff url("images/sst-ibook.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 10em;
+}
+
+#math-app-image {
+	background: #fff url("images/math-app-image.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 10em;
+}
+
+#ftm-website-image {
+	background: #fff url("images/ftm-website-image.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 10em;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* Big Screen*/
+
+@media(min-width: 586px){
+
+	.navbar ul {
+		padding-left: 7em;
+		font-size: 18px;
+	}
+
+	.navbar div {
+		height: 4.5em;
+	}
+
+	#contact-us-operation-details p {
+		columns: 2;
+	}
+
+	/* //////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+	/* CSS Grids */
+	.main-grid {
+		display: grid;
+		grid-template-columns: 1fr minmax(auto, 60em) 1fr;
+	}
+
+	.main-grid > .content-wrap, .main-grid > .content-nowrap {
+		grid-column: 2;
+	}
+
+	.mission-vision-grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.team-grid {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	.our-workflow-grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.our-projects-grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.our-projects-card .content-wrap {
+		height: calc(100% - 10em);
+		display: table;
+	}
+
+	.our-projects-div {
+		display: table-row;
+		height: 100%;
+	}
+}

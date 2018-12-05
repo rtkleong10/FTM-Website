@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-
 /* Core Styles*/
 body {
 	margin: 0;
-	font-family: sans-serif;
+	font-family: Roboto;
 	background: #000;
 }
 
@@ -247,7 +245,7 @@ textarea {
 
 /* Big Screen*/
 
-@media(min-width: 586px){
+@media(min-width: 768px){
 
 	.navbar ul {
 		padding-left: 7em;
